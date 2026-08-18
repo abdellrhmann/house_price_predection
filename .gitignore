@@ -1,0 +1,46 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+.env.local
+*.log
+*.pot
+*.pyc
+dist/
+build/
+*.egg-info/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/node_modules/
+.npm
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data - exclude real large datasets, but include sample data for testing
+# notebooks/data/house_prices.csv  # Comment out to allow synthetic sample
+
+# Model (can commit if <50MB)
+# backend/models/house_price.pkl
+
+# Misc
+.pytest_cache/
+.coverage
+htmlcov/
+

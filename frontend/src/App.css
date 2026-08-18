@@ -1,0 +1,79 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f4f8;
+}
+
+.header {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.main-content {
+  flex: 1;
+  max-width: 700px;
+  margin: 2rem auto;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.footer {
+  background: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.error-banner {
+  background-color: #fee;
+  border-left: 4px solid #ef4444;
+  color: #ef4444;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #6b7280;
+  font-weight: 500;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .main-content {
+    margin: 1rem auto;
+  }
+}
